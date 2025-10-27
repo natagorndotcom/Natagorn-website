@@ -107,19 +107,20 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #con h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .butgmail, .tel, .butig, .butfc {
   width: 80%;
-  max-width: 320px;
+  max-width: 330px;
   margin: 10px auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -151,11 +152,10 @@ a {
 .Skl {
   width: 90%;
   max-width: 900px;
-  margin: 0 auto 30px auto;
-  padding: 25px 15px;
-  border-radius: 12px;
+  margin: 30px auto;
   background-color: #f8f4e9;
-  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
   box-sizing: border-box;
 }
 .Skl h1{
@@ -171,7 +171,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .myp{
@@ -608,6 +608,12 @@ a {
     gap: 20px;
   }
 
+  .butgmail, .tel, .butig, .butfc {
+    width: 90%;
+    max-width: 350px;
+    margin: 10px auto;
+  }
+  
   .Skl {
     grid-column: span 2;
   }
