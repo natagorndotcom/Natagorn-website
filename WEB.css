@@ -743,6 +743,80 @@ h1, h2, h3, p, a, li, span {
   line-height: 1.6;
 }
 
+@media (max-width: 767px) {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  .hero .pic {
+    height: auto;
+    width: 80%;
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+
+
+  .pr, .pr2 {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .pr img, .pr2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .text-box {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+
+  .dowbox {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+
+  .butgmail, .tel, .butig, .butfc {
+    width: 90%;
+    max-width: 350px;
+    font-size: 20px;
+    padding: 12px 0;
+    margin: 10px auto;
+  }
+
+
+  .text-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .abtm, #con, .info, .Skl {
+    margin: 10px 5%;
+    padding: 15px;
+  }
+}
+
 
 footer {
   color: white;
