@@ -538,61 +538,79 @@ a {
   background: #8b1414;
 }
 
-
 /* mediaa */
 @media (max-width: 767px) {
-  h1{
-    font-size: 25px;
-  }
-  .pic{
+  .pic {
     height: 200px;
     width: auto;
   }
-  .gal{
+
+  .gal {
     max-width: calc(250px * 1.5 + 20px);
   }
+
   .top {
     margin-top: 20px;
     align-items: center;
   }
+
   .name {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
   .abtm {
     flex-direction: column;
     margin: 20px 5%;
   }
-  #con,.info {
+
+  #con, .info {
     flex-basis: 100%;
     margin-bottom: 15px;
   }
+
+  .pr, .pr2 {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .pr img, .pr2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dowbox {
+    align-self: center;
+    margin-top: 10px;
+  }
 }
 
-@media (min-width:767px ) and (max-width:991px) {
-  h1{
-    font-size: 40px;
-  }
-  .pic{
+@media (min-width: 767px) and (max-width: 991px) {
+  .pic {
     height: 200px;
     width: auto;
   }
-  .gal{
+
+  .gal {
     max-width: calc(250px * 3 + 20px);
   }
+
   .top {
     margin-top: 20px;
     margin-right: 0;
     align-items: center;
   }
+
   .name {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
   .abtm {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -602,41 +620,80 @@ a {
   .Skl {
     grid-column: span 2;
   }
-  #con,.info {
+
+  #con, .info {
     flex-basis: 100%;
     margin-bottom: 15px;
   }
-}
-@media (min-width:992px) {
-  h1{
-    font-size: 4rem;
+
+  .pr, .pr2 {
+    width: 85%;
+    margin: 0 auto;
   }
-  .pic{
+}
+
+@media (min-width: 992px) {
+  .pic {
     height: 300px;
     width: auto;
   }
-  .gal{
+
+  .gal {
     max-width: calc(250px * 6 + 20px);
   }
+
   .top {
     margin-top: 20px;
     margin-right: 0;
     align-items: center;
   }
+
   .name {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
+
   .abtm {
     flex-direction: row;
     margin: 20px 5%;
   }
-  #con,.info {
+
+  #con, .info {
     margin-bottom: 15px;
   }
+
+  .pr, .pr2 {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
+
+@media (min-width: 2000px) {
+  html {
+    zoom: 1.35;
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .hero, #con {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+body {
+  padding: env(safe-area-inset);
+}
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 footer {
   color: white;
