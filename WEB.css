@@ -199,21 +199,16 @@ a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 30px auto;
+  margin: 50px auto;
   padding: 30px 40px;
   border-radius: 20px;
   box-sizing: border-box;
   width: 70%;
   max-width: 1100px;
   gap: 30px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
 }
 
-.pr:hover, .pr2:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-}
 
 .pr img, .pr2 img {
   width: 35%;
@@ -573,13 +568,16 @@ a {
 
   .pr, .pr2 {
     flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    align-items: center;
+    width: 92%;
+    margin: 35px auto;
+    padding: 22px;
   }
 
   .pr img, .pr2 img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 
   .dowbox {
@@ -628,7 +626,8 @@ a {
 
   .pr, .pr2 {
     width: 85%;
-    margin: 0 auto;
+    margin: 45px auto;
+    padding: 30px;
   }
 }
 
@@ -666,7 +665,8 @@ a {
 
   .pr, .pr2 {
     width: 70%;
-    margin: 0 auto;
+    margin: 55px auto;
+    padding: 35px;
   }
 }
 
@@ -682,44 +682,54 @@ a {
     backdrop-filter: blur(10px);
   }
 }
+
 html, body {
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
 }
+
 body {
   padding: env(safe-area-inset);
 }
+
 button, a {
   -webkit-tap-highlight-color: transparent;
 }
+
 * { box-sizing: border-box; }
 html, body { max-width: 100%; overflow-x: hidden; }
 img, video { max-width: 100%; height: auto; display: block; }
+
 h1, h2, h3, p, a, li, span {
   word-break: break-word;
   overflow-wrap: anywhere;
 }
+
 .hero-title, h1 {
   font-size: clamp(28px, 6vw, 72px);
   line-height: 1.15;
 }
+
 .container, .section, .wrap {
   width: min(1100px, 100%);
   margin-inline: auto;
   padding-inline: clamp(16px, 4vw, 32px);
 }
+
 .btn, .button, .cta, .contact-btn {
   display: block;
   width: 100%;
   max-width: 640px;
   margin-inline: auto;
 }
+
 .project-card {
   position: relative;
   border-radius: 24px;
   padding: clamp(16px, 3.5vw, 28px);
   background: #f3dfc0;
 }
+
 .project-card .cta-download {
   position: static;
   margin-top: 16px;
@@ -735,86 +745,14 @@ h1, h2, h3, p, a, li, span {
 @media (max-width: 768px) {
   .grid-2 { grid-template-columns: 1fr; }
 }
+
 .section, .hero, .bg-wrap {
   overflow: hidden;
 }
+
 .project-card p {
   font-size: clamp(14px, 3.8vw, 18px);
   line-height: 1.6;
-}
-
-@media (max-width: 767px) {
-  html, body {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-
-  .hero {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(28px, 8vw, 40px);
-  }
-
-  .hero .pic {
-    height: auto;
-    width: 80%;
-    max-width: 300px;
-    margin: 10px auto 0;
-  }
-
-
-  .pr, .pr2 {
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
-    margin: 20px auto;
-    padding: 20px;
-  }
-
-  .pr img, .pr2 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .text-box {
-    width: 100%;
-    padding: 10px 0;
-  }
-
-
-  .dowbox {
-    width: 100%;
-    padding: 12px 0;
-    font-size: 18px;
-    margin-top: 15px;
-  }
-
-
-  .butgmail, .tel, .butig, .butfc {
-    width: 90%;
-    max-width: 350px;
-    font-size: 20px;
-    padding: 12px 0;
-    margin: 10px auto;
-  }
-
-
-  .text-box p {
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-  }
-
-  .abtm, #con, .info, .Skl {
-    margin: 10px 5%;
-    padding: 15px;
-  }
 }
 
 
