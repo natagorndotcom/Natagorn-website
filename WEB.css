@@ -553,31 +553,16 @@ a {
 
 /* mediaa */
 @media (max-width: 480px) {
-  .hero {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    overflow: visible;
-    padding: 0;
-  }
-
-  .hero .pic {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 0;
-  }
-
   .hero h1 {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 40vh;
+    font-size: 1.8rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem !important;
+  }
+  
+  #con, .info, .Skl {
+    padding: 15px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -610,12 +595,60 @@ a {
 }
 @media (max-width: 768px) {
   .hero {
+    height: 70vh !important;
     flex-direction: column;
-    height: 50vh !important;
     text-align: center;
-    padding: 0px;
+    padding: 20px !important;
+    margin-bottom: 30px !important;
   }
   
+  .hero-content {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+  
+  .hero .pic {
+    position: relative !important;
+    bottom: auto !important;
+    right: auto !important;
+    height: 200px !important;
+    max-height: none !important;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 2rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .abtm {
+    margin: 20px 10px !important;
+    gap: 15px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .butgmail, .tel, .butig, .butfc {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 5px 0 !important;
+  }
+  
+  .pr, .pr2 {
+    width: 95% !important;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .pr img, .pr2 img {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
   .hero-content {
     max-width: 100%;
     z-index: 3;
@@ -635,7 +668,7 @@ a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-top: 100px;
   }
-}
+}  
 @media (min-width: 769px) and (max-width: 1023px) {
   body {
     font-size: 16px;
