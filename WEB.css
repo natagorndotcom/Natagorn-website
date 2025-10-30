@@ -595,32 +595,24 @@ a {
 }
 @media (max-width: 768px) {
   .hero {
-    height: 27vh !important;
+    height: auto !important;
+    min-height: 10px;
     flex-direction: column;
     text-align: center;
-    padding: 20px !important;
+    padding: 0px !important;
     margin-bottom: 30px !important;
   }
   
-  .hero-content {
-    max-width: 100% !important;
-    margin-bottom: 20px;
-  }
-  
   .hero .pic {
-    position: relative !important;
-    bottom: auto !important;
-    right: auto !important;
-    height: 200px !important;
+    height: 180px !important;
+    width: 180px !important;
     max-height: none !important;
-    margin: 0 auto;
   }
   
   .hero h1 {
-    font-size: 2rem !important;
     margin-top: 20px !important;
-    margin-bottom: 20px !important;
   }
+}
   
   .abtm {
     margin: 20px 10px !important;
