@@ -595,7 +595,7 @@ a {
 }
 @media (max-width: 768px) {
   .hero {
-    height: 70vh !important;
+    height: 27vh !important;
     flex-direction: column;
     text-align: center;
     padding: 20px !important;
