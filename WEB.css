@@ -580,7 +580,6 @@ a {
     margin-bottom: 40vh;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   body {
     font-size: 15px;
@@ -607,43 +606,6 @@ a {
 
   footer {
     font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  body {
-    font-size: 16px;
-  }
-  .hero {
-    flex-direction: row;
-    height: auto;
-    padding: 40px;
-    margin-bottom: 60px;
-  }
-  .hero .pic {
-    height: 75%;
-    max-height: 55vh;
-    }
-  .hero h1 {
-    font-size: 2.8rem;
-  }
-  .pic {
-    width: 45%;
-  }
-  .abtm {
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-  }
-  .pr, .pr2 {
-    width: 85%;
-    padding: 30px;
-  }
-  .text-box p {
-    font-size: 17px;
-  }
-  .dowbox {
-    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -674,7 +636,48 @@ a {
     margin-top: 100px;
   }
 }
-
+@media (min-width: 769px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+  .hero {
+    flex-direction: row;
+    height: auto;
+    padding: 40px;
+    margin-bottom: 60px;
+    margin-bottom: 120px;
+  }
+  .hero .pic {
+    bottom: -60px;
+    right: 2vw;
+    height: 80%;
+    max-height: 70vh;
+  }
+  .hero-content {
+    max-width: 50%;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .pic {
+    width: 45%;
+  }
+  .abtm {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+  }
+  .pr, .pr2 {
+    width: 85%;
+    padding: 30px;
+  }
+  .text-box p {
+    font-size: 17px;
+  }
+  .dowbox {
+    font-size: 20px;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1440px) {
   .hero h1 {
     font-size: 3.5rem;
@@ -692,7 +695,6 @@ a {
     font-size: 18px;
   }
 }
-
 @media (min-width: 1441px) {
   .hero h1 {
     font-size: 4rem;
@@ -712,25 +714,47 @@ a {
   }
 }
 @media (min-width: 2000px) {
-  .gal img {
-  width: 320px;
-  }
-  .hero .pic {
-    transform: scale(1.05) translateY(20px);
-  }
   .hero {
-    height: 50vh;
+    margin-bottom: 120px !important;
+    height: 60vh !important;
   }
   
+  .hero .pic {
+    bottom: 0px !important;
+    right: 23vw;
+    height: 75% !important;
+    max-height: 65vh !important;
+  }
+  
+  .hero-content {
+    max-width: 45% !important;
+    margin-left: 5vw;
+  }
+  
+  .hero-content h1 {
+    font-size: 4.5rem !important;
+  }
+  
+  .hero-content p {
+    font-size: 2rem !important;
+  }
 }
-
+@media (min-width: 2500px) {
+  .hero {
+    margin-bottom: 100px !important;
+  }
+  
+  .hero .pic {
+    bottom: 0px !important;
+    height: 70% !important;
+  }
+}
 @media (min-width: 3200px) {
   html { zoom: 1.25; }
   .gal img {
   width: 380px;
   }
 }
-
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .hero, #con {
