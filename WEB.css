@@ -595,18 +595,18 @@ a {
 }
 @media (max-width: 768px) {
   .hero {
-    height: auto !important;
+    height: 340px !important;
     min-height: 10px;
     flex-direction: column;
     text-align: center;
-    padding: 0px !important;
+    padding: 30px !important;
     margin-bottom: 30px !important;
   }
   
   .hero .pic {
-    height: 180px !important;
-    width: 180px !important;
+    height: 240px !important;
     max-height: none !important;
+    margin-top: -35px;
   }
   
   .hero h1 {
