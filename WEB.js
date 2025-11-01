@@ -15,3 +15,9 @@ function openModal(img) {
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
+
+function toggleReadMore(link) {
+    link.preventDefault();
+    const content = link.target.closest('p').querySelector('.read-more-content');
+    content.classList.add('show');
+}
